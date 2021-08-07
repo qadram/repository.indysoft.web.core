@@ -1,0 +1,44 @@
+{
+	"name": "repository-indysoft-web-core",
+	"displayName": "Repository Items for IndySoft WEB Core Projects",
+	"description": "Items to create IndySoft WEB Core Projects, to use with the Repository extension",
+	"publisher": "tmssoftware",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/qadram/repository.indysoft.web.core.git"
+	},
+	"icon": "media/indysoft-logo.png",
+	"version": "0.0.20",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"scripts": {
+		"vscode:prepublish": "npm install; npm run compile; npm prune --production",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"extensionPack": [
+		"branchcreation.repository"
+	],
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.17.60",
+		"@types/yeoman-test": "^2.0.4",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"dependencies": {
+		"generator-indysoft-web-core": "0.0.13",
+		"yeoman-test": "^3.0.0"
+	}
+}
