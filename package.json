@@ -8,7 +8,7 @@
 		"url": "git://github.com/qadram/repository.indysoft.web.core.git"
 	},
 	"icon": "media/indysoft-logo.png",
-	"version": "0.0.21",
+	"version": "0.0.22",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
@@ -38,7 +38,7 @@
 		"vscode": "^1.1.28"
 	},
 	"dependencies": {
-		"generator-indysoft-web-core": "0.0.16",
+		"generator-indysoft-web-core": "0.0.17",
 		"yeoman-test": "^3.0.0"
 	}
 }
